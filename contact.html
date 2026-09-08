@@ -16,10 +16,85 @@
     |
     <a href="./contact.html">Contact</a>
    </p>
-   <h2> Visit Our Website</h2>
-   <p>
-    <a href="https://www.google.com"> Visit Google </a>
-   </p>
+   <hr>
+   
+   
+   <h2>Customer Registration & Order Form</h2>
+
+   <h3>Customer Information</h3>
+   <form>
+    <label for="name">Full Name</label>
+    <br>
+    <input type="text" id="name" name="name" placeholder="Enter your full name">
+
+    <br><br>
+    <label for="email">Email Address</label>
+    <br>
+    <input type="email" id="email" name="email" placeholder="Enter your email address">
+
+    <br><br>
+    <label for="password">Password</label>
+    <br>
+    <input type="password" id="password" name="password">
+
+    <br><br>
+    <label for="phone">Phone Number</label>
+    <br>
+    <input type="tel" id="phone" name="phone">
+    
+    <br>
+    <h3>Order Information</h3>
+
+    <label for="Quantity">Quantity</label>
+    <br>
+    <input type="number" id="number" name="number">
+
+    <br><br>
+    <label for="Preferred Delivery Date">Preferred Delivery Date</label>
+    <br>
+    <input type="date" id="delivery-date" name="delivery-date">
+
+    <br><br>
+    <label for="Select food Item">Select Food Item</label>
+    <br>
+    <select id="food-item" name="food-item">
+        <option value="">Veg Pizza</option>
+        <option value="">Cheese Burger</option>
+        <option value="">Veggie Sandwich</option>
+        <option value="">Crispy Fries</option>
+    </select>
+
+    <br>
+    <h3>Payment Method</h3>
+    <input type="radio" id="Cash" name="payment-method" value="Cash">
+    <label for="Cash">Cash</label>
+    <br>
+    <input type="radio" id="Card" >
+    <label for="Card">Card</label>
+    <br>
+    <input type="radio" id="UPI">
+    <label for="UPI">UPI</label>
+
+    <br>
+    <h3>Extra</h3>
+    
+    <input type="checkbox" id="Extra Cheese" name="extra-cheese">
+    <label for="Extra Cheese">Extra Cheese</label>
+    <br>
+    <input type="checkbox" id="Cold Drink" name="cold drink">
+    <label for="Cold Drink">Cold Drink</label>
+    <br>
+    <input type="checkbox" id="Dessret" name="dessert">
+    <label for="Dessret">Dessert</label>
+
+    <h3>Delivery Instructions</h3>
+    <label for="delivery-instructions">Delivery Address</label>
+    <br>
+    <textarea id="delivery-instructions" name="delivery-instructions" rows="4" cols="50" placeholder="Enter any specific delivery instructions here..."></textarea>
+    <br><br>
+    <input type="submit" value="Place Order">
+    <input type="reset" value="Clear Form">
+   </form>
     
 </body>
 </html>
