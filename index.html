@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BiteBox</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family
+    =Montserrat:wght@400;600;700;800&family=Pacifico&family=Poppins:wght@300;
+    400;500;600;700&display=swap" rel="stylesheet">
 </head>
   
 <body>
@@ -28,122 +32,104 @@
 
 
    <main>
-    <section>
-        <h1>Delicious Food Delivered To your Doorstep</h1>
+    <section id="home-hero">
+        <div class="hero-content">
+        <h1>Delicious Food Delivered To your <span>Doorstep</span></h1>
         <p>
             Fresh ingredients, delicious recipes, and fast delivery - all in one place.
         </p>
-        <a href="menu.html">Order Now</a>
-        |
-        <a href="menu.html">Explore Menu</a>
-    </section>
 
-    <section id="features">
+    <div class="hero-buttons">
+    <a href="menu.html" class="order-btn">Order Now</a>
+    <a href="menu.html" class="menu-btn">Explore Menu</a>
+    </div>
+</div>
+</section>
+    </main>
+    <section id="feature">
               <h2>Why Choose BiteBox?</h2>
-
+        
               <article>
+                
                 <img src="./assests/images/fresh vegetabels" alt="Fresh vegetables" width="80">
+                <div>
                 <h3>Fresh Ingredients</h3>
                 <p> Every meal is prepared using fresh vegetables and quality ingredients.</p>
+                </div>
               </article>
 
               <article>
                 <img src="./assests/images/images.jpg" alt="Fast Delivery" width="80">
-                <h3>Fast Delivery</h3>
+                <div>
+                    <h3>Fast Delivery</h3>
                 <p>Get your favourite meals delivered to your doorstep within 30 minutes.</p>
+                </div>
               </article>
 
               <article>
                 <img src="./assests/images/hyginic kitechen.jpg" alt="Hygenic kitchen" width="80">
-                <h3>Hygienic Kitchen</h3>
+                <div>
+                    <h3>Hygienic Kitchen</h3>
                 <p>Our kitchen follows strict hygiene protocols to ensure the safety and quality of every meal.</p>
+                </div>
               </article>
               <article>
                 <img src="./assests/images/easy online order.png" alt="Easy Online Ordering" 
                   width="80">
-                  <h3>Easy Online Ordering</h3>
+                  <div>
+                    <h3>Easy Online Ordering</h3>
                   <p>
                       Browse the menu, place your order, and enjoy your meal with 
                       just a few clicks.
                 </p>
+                  </div>
             </article>
+              
     </section>
 
-   <section>
-   <hr>
-   <h2>About BiteBox</h2>
-    <p>
-        BiteBox is your one-stop destination for delicious meals 
-        prepared using fresh ingredients and delivered quickly
-        to your doorstep.
-    </p>
-    </section>
-
-    <section>
-<hr>
-<h2> Our Story </h2>
-<p>
-
-  BiteBox started with a simple mission-to serve fresh, delicious meals 
-  prepared with quality ingredients and delivered with exceptional 
-  service. Every meal is crafted with care to bring happiness to our 
-  customers.
-</p>
-</section>
-
-<section>
-<hr>
-<h2> Chef's Message </h2>
-<p>
-<em>
-Every dish at BiteBox is prepared with fresh ingredients, authentic recipes,
-and a passion for delivering memorable dining experiences.
-</em>
-</p>
-</section>
-
-<section id="featured-dishes">
+<section id="popular-dishes">
     <h2> Popular Dishes </h2>
     <article>
         <img src="./assests/images/pizza.jpg" alt="Pizza" width="220">
         <h3>Cheese Pizza</h3>
-        <p>
+        <p class="details">
              Loaded with fresh vegetables and mozzarella cheese.
         </p>
-        <p>
+        <p class="ratings">
              <span>⭐⭐⭐⭐⭐ </span> <small>(126)</small>
         </p>
-        <p><strong> ₹249 </strong></p>
+        <p class="price"><strong> ₹249 </strong></p>
     </article>
 
     <article>
         <img src="./assests/images/Burger.jpg" alt="Chicken Burger" width="220">
                 <h3>Chicken Burger</h3>
-                <p>
+                <p class="details">
                     Crispy chicken patty served with fresh lettuce and cheese.
                 </p>
-                <p> <span>⭐⭐⭐⭐⭐ </span> <small> (99)</small> </p>
-                <p> <strong>₹199</strong> </p>
+                <p class="ratings"> <span>⭐⭐⭐⭐⭐ </span> <small> (99)</small> </p>
+                <p class="price"> <strong>₹199</strong> </p>
     </article>
 
-    <article>
+    <article >
         <img src="./assests/images/Pasta.jpg" alt="White Sauce Pasta" width="220">
                 <h3>White Sauce Pasta</h3>
-                <p>
+                <p class="details">
                     Creamy white sauce pasta tossed with herbs and fresh vegetables.
                 </p>
-                <p> <span>⭐⭐⭐⭐⭐ </span><small> (76) </small> </p>
-                <p> <strong>₹229</strong></p>
+                <p class="ratings"> <span>⭐⭐⭐⭐⭐ </span><small> (76) </small> </p>
+                <p class="price"> <strong>₹229</strong></p>
     </article>
 
     <article>
-        <img src="./assests/images/biriyani.jpg" lt="Chicken Biryani" width="220">
+        <img src="./assests/images/biriyani.jpg" alt="Chicken Biryani" width="220">
                 <h3>Chicken Biryani</h3>
-                <p>
+                <p  class="details">
+    
                     Aromatic basmati rice layered with tender chicken and authentic spices.
                 </p>
-                <p> <span>⭐⭐⭐⭐⭐ </span><small>(112)</small> </p>
-                <p><strong>₹249</strong></p>
+                <p class="ratings"> <span>⭐⭐⭐⭐⭐ </span><small>(112)</small> </p>
+                <p class="price"><strong>₹249</strong></p>
 
     </article>
 
@@ -154,7 +140,7 @@ and a passion for delivering memorable dining experiences.
                     Rich chocolate sponge layered with creamy chocolate frosting.
                 </p>
                 <p><span>⭐⭐⭐⭐⭐</span><small>(58)</small> </p>
-                <p> <strong>₹149</strong></p>
+                <p class="price"> <strong>₹149</strong></p>
             
     </article>
 </section>
