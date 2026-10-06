@@ -88,82 +88,67 @@
     </div>
 </section>
 
-<section id="business-hours">
-    <div class="hours-container">
+<!--================ Contact Details Section ================-->
+<section id="contact-details">
+
+    <!-- Left Column -->
+    <div class="left-column">
         <!-- Business Hours -->
-        <article>
-          <div>
-              <img src="./assests/images/clock icon.png" width="60" alt="Clock Icon">
+        <div class="business-card">
             <h2>Business Hours</h2>
-            <table>
-                <tr>
-                    <td>Monday – Friday</td>
-                    <td>11:00 AM – 11:00 PM</td>
-                </tr>
+            <hr>
+            <div class="business-content">
+                <img src="./assests/images/clock icon.png" alt="Clock">
+                <table>
+                    <tr> <td>Monday – Friday</td>
+                         <td>11:00 AM – 11:00 PM</td>
+                    </tr>
 
-                <tr>
-                     <td>Saturday</td>
-                    <td>10:00 AM – 12:00 AM</td>
-                </tr>
+                    <tr> <td>Saturday</td>
+                        <td>10:00 AM – 12:00 AM</td>
+                    </tr>
 
-                <tr>
-                    <td>Sunday</td>
-                    <td>10:00 AM – 10:00 PM</td>
-                </tr>
-            </table>
-          </div>
-        </article>
-
-        <!-- Catering Information -->
-        <article>
-            <img src="./assests/images/event icon.png " height="100" alt="Event Icon">
-            <h3>Planning a Special Event?</h3>
-            <p>
-                We also offer catering services for birthday parties,
-                family gatherings, corporate meetings, and special events.
-            </p>
-            <a href="#">Contact Us</a>
-        </article>
+                    <tr> <td>Sunday</td>
+                        <td>10:00 AM – 10:00 PM</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- Event Card -->
+        <div class="event-card">
+            <img src="assets/icons/calendar.png" alt="Calendar">
+            <div>
+                <h3>Planning a special event?</h3>
+                <p>
+                    We also offer catering services for parties,
+                    events and corporate meetings.
+                </p>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
     </div>
-</section>
 
-<!-- Contact Form Section -->
+    <!-- Right Column -->
+    <div class="right-column">
+        <h2>Send Us a Message</h2>
+        <hr>
+        <form>
+            <div class="form-row">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+            </div>
 
-<section id="contact-form">
-
-    <div class="section-title">
-      
-        <h4>Send Us a Message</h4>
-      
-        <h2>We'd Love to Hear From You</h2>
-      
-        <p>
-            Fill out the form below, and our team will get back to you as 
-            soon as possible.
-        </p>
-      
+            <div class="form-row">
+                <input type="tel" placeholder="Phone Number">
+                <input type="text" placeholder="Subject">
+            </div>
+             <textarea placeholder="Your Message"></textarea>
+            <button>Send Message ✈</button>
+        </form>
     </div>
-     <form action="#">
+    </section>
 
-        <label for="name">Full Name</label>
-        <input type="text" id="name" placeholder="Enter your full name">
-
-        <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="Enter your email address">
-
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" placeholder="Enter your phone number">
-
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" placeholder="Enter the subject">
-
-        <label for="message">Message</label>
-       <textarea id="message" row="6" placeholder="Enter your msg here"></textarea>
-
-        <input type="submit" value="Send Message">
-
-    </form>
-</section>
+<div>
 <section id="google-map">
     <div class="section-title">
         <h4>Find Us</h4>
@@ -171,15 +156,17 @@
         <p> Locate BiteBox on Google Maps and visit us for a delightful 
             dining experience.
         </p>
-    </div>
+    </div> 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.2382304031876!2d73.8516223752233!3d18.653302665106363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c7001f0b356d%3A0xf11649a65ab0c20d!2sSant%20Dnyaneshwar%20Nagar!5e0!3m2!1sen!2sin!4v1789045445155!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 </section>
+</div>
 
 
 
 
-
+<div>
    <footer>
+    <div class="footer-container">
     <section>
         <img src="./assests/images/logo.png" alt="BiteBox Logo" width="180">
         <p> Delicious food delivered to your doorstep. Fresh, fast and tasty!</p>
@@ -230,11 +217,12 @@
 
     <section>
         <h3>Payment Methods</h3>
-        <img src="./assests/images/visa.webp" alt="Visa" width="60">
+       <img src="./assests/images/visa.webp" alt="Visa" width="60">
         <img src="./assests/images/mastercard.png" alt="MasterCard" width="60">
         <img src="./assests/images/upi.webp" alt="UPI" width="60">
         <img src="./assests/images/payment.avif"  alt="Paytm" width="60">
     </section>
+    </div>
 
     <hr>
     <p> © 2026 BiteBox. All Rights Reserved. </p>
