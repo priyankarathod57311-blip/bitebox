@@ -12,8 +12,9 @@
 <body>
     <header>
    <img src="./assests/images/logo.png" alt="BiteBox Logo" width="150">
+   
    <nav>
-   <p> 
+  
     <a href="./index.html">Home</a>
     |
     <a href="./menu.html">Menu</a>
@@ -21,10 +22,16 @@
     <a href="./about.html">About</a>
     |
     <a href="./contact.html">Contact</a>
+    
+    <div class="cart-icon"> <a href="cart.html"><img src="./assests/images/cart icon.png"></a></div>
     |
-    <a href="cart.html"><img src="./assests/images/cart icon.png" width="20"></a>
-   </p>
+    <button type="button" id="theme-toggle" class="theme-toggle">
+        <span class="theme-icon">☀</span>
+        <span class="theme-text"> DAY MODE</span>
+</button>
+   
    </nav>
+  
    </header>
    <section id="cart-hero">
     <div class="hero-content">
@@ -87,7 +94,7 @@
 
     <td>
         <a href="#">
-            <img src="/assests/images/delet.png" alt="Delete" width="25">
+            <img src="./assests/images/delet.png" alt="Dele" width="305">
         </a>
 
     </td>
@@ -177,19 +184,32 @@
 
 <aside id="order-summary">
     <h2>Order Summary</h2>
-  
-    <p> <span>Subtotal (3 Items)</span> <span>₹826.00</span> </p>
-  
-    <p> <span>Delivery Charges</span> <span>₹40.00</span> </p>
-  
-    <p> <span>Packaging Charges</span> <span>₹20.00</span> </p>
-  
+    <p> <span>Subtotal (3 Items)</span>
+        <span id="subtotal-amount">₹0.00</span>
+    </p>
+
+    <p> <span>Delivery Charges</span>
+        <span id="delivery-amount">₹0.00</span>
+    </p>
+    <p> <span>Packaging Charges</span>
+        <span id="packaging-amount">₹0.00</span>
+    </p>
+
+    <p id="discount-row">
+      <span>Discount</span>
+        <span id="discount-amount">₹0.00</span>
+    </p>
+
     <hr>
-    <h3> <span>Total Amount</span> <span>₹886.00</span> </h3>
-  
+    <h3><span>Total Amount</span>
+        <span id="total-amount">₹0.00</span>
+    </h3>
+
     <button type="button"> Proceed to Checkout </button>
+
     <p> <img src="./assests/images/secureckeckout.jpg" width="18" height="18">
-    Secure Checkout </p>
+        Secure Checkout
+    </p>
 </aside>
 </div>
    <footer>
@@ -255,7 +275,7 @@
     <p> © 2026 BiteBox. All Rights Reserved. </p>
     
     
-
 </footer>
+<script src="./js/script.js"></script>
 </body>
 </html>

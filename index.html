@@ -15,8 +15,9 @@
 <body>
     <header>
    <img src="./assests/images/logo.png" alt="BiteBox Logo" width="150">
+   
    <nav>
-   <p> 
+  
     <a href="./index.html">Home</a>
     |
     <a href="./menu.html">Menu</a>
@@ -25,9 +26,15 @@
     |
     <a href="./contact.html">Contact</a>
     
-    <a href="cart.html"><img src="./assests/images/cart icon.png" width="20"></a>
-   </p>
+    <div class="cart-icon"> <a href="cart.html"><img src="./assests/images/cart icon.png"></a></div>
+    |
+    <button type="button" id="theme-toggle" class="theme-toggle">
+        <span class="theme-icon">☀</span>
+        <span class="theme-text"> DAY MODE</span>
+</button>
+   
    </nav>
+  
    </header>
 
 
@@ -157,10 +164,7 @@
                 <a href="menu.html"> Order Now </a>
             </div>
  
-            <div class="offer-image">
-                <img src="./assests/images/20.jpg" alt="20% OFF" width="180" 
-                height="180">
-            </div>
+            
 </section>
 
 
@@ -290,6 +294,7 @@
     
 
 </footer>
+<script src="./js/script.js"></script>
    
 </body>
 </html>  

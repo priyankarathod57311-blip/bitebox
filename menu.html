@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Allura&family=Montserrat:wght@400;600;700;800&family=Pacifico&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
    <header>
    <img src="./assests/images/logo.png" alt="BiteBox Logo" width="150">
+   
    <nav>
-   <p> 
+  
     <a href="./index.html">Home</a>
     |
     <a href="./menu.html">Menu</a>
@@ -21,10 +22,16 @@
     <a href="./about.html">About</a>
     |
     <a href="./contact.html">Contact</a>
-
-    <a href="cart.html"><img src="./assests/images/cart icon.png" width="20"></a>
-   </p>
+    
+    <div class="cart-icon"> <a href="cart.html"><img src="./assests/images/cart icon.png"></a></div>
+    |
+    <button type="button" id="theme-toggle" class="theme-toggle">
+        <span class="theme-icon">☀</span>
+        <span class="theme-text"> DAY MODE</span>
+</button>
+   
    </nav>
+  
    </header>
 
    <section id="menu-hero">
@@ -44,83 +51,234 @@
    <div>
     <article>
    <img src="./assests/images/Pizza.jpg" alt="Pizza" height="120" width="120">
-   <h3> Cheesy Veg Pizza </h3>
+   <h3> Pizza </h3>
    </article>
 
 
    <article>
    <img src="./assests/images/Burger.jpg" alt="Burger" height="120" width="120">
-   <h3>Classic Cheese Burger</h3>
+   <h3> Burger</h3>
    </article>
 
    <article>
    <img src="./assests/images/Sandwich.jpg" alt="Sandwich" height="120" width="120">
-   <h3> Veggie Sandwich </h3>
+   <h3>  Sandwich </h3>
    </article>
    
   
     <article>   
-   <img src="./assests/images/Fries.jpg" alt="Fries" height="120" width="120">
-   <h3> Crispy Fries </h3>
+   <img src="./assests/images/creamy pasta.webp" alt="Fries" height="120" width="120">
+   <h3> Pasta </h3>
     </article>
 
     </div>
  </section> 
+
+ <div class="menu-search">
+    <input type="text" id="menu-search" placeholder="Search for dishes...">
+    <button type="button" id="search-button">
+        <img src="./assests/images/search-icon-png-5.png"Search" width="20" height="20">
+    </button>
+</div>
  
  
  <section id="menu-items">
    <h2><span></span>Our Menu<span></span></h2>
    <div>
       <!-- Menu Item 1 -->
-       <article>
+       <article data-category="pizza">
         <span class="tag">Bestseller</span>
            <img src="./assests/images/Margherita Pizza.avif"  width="220">
             <h3>Margherita Pizza</h3>
             <p class="rating"> ⭐⭐⭐⭐⭐ <small>(120)</small> </p>
             <p class="price"> <strong>₹249</strong></p>
-            <button> <img src="assets/icons/cart-red.png" alt="Cart" width="14" height="14">
+            <button> <img src="./assests/icon/red-simple-shopping-cart-icon-12.png" alt="Cart" width="14" height="14">
                 Add to Cart </button>
         </article>
 
+        <article data-category="pizza">
+       
+           <img src="./assests/images/4 cheese pizza.png"  width="220">
+            <h3>Four Cheese Pizza</h3>
+            <p class="rating"> ⭐⭐⭐⭐⭐ <small>(120)</small> </p>
+            <p class="price"> <strong>₹249</strong></p>
+            <button> <img src="./assests/icon/red-simple-shopping-cart-icon-12.png" alt="Cart" width="14" height="14">
+                Add to Cart </button>
+        </article>
+        <article data-category="pizza">
+       
+           <img src="./assests/images/chiken pizza.jpg"  width="220">
+            <h3>Chiken Pizza</h3>
+            <p class="rating"> ⭐⭐⭐⭐⭐ <small>(120)</small> </p>
+            <p class="price"> <strong>₹249</strong></p>
+            <button> <img src="./assests/icon/red-simple-shopping-cart-icon-12.png" alt="Cart" width="14" height="14">
+                Add to Cart </button>
+        </article>
+
+        <article data-category="pizza">
+        
+           <img src="./assests/images/meat pizza.jpeg"  width="220">
+            <h3>Meat Pizza</h3>
+            <p class="rating"> ⭐⭐⭐⭐⭐ <small>(120)</small> </p>
+            <p class="price"> <strong>₹249</strong></p>
+            <button> <img src="./assests/icon/red-simple-shopping-cart-icon-12.png" alt="Cart" width="14" height="14">
+                Add to Cart </button>
+        </article>
+
+        <article data-category="pizza">
+       
+           <img src="./assests/images/paneer pizza.webp"  width="220">
+           <h3>Paneer Pizza</h3>
+            <p class="rating"> ⭐⭐⭐⭐⭐ <small>(120)</small> </p>
+            <p class="price"> <strong>₹249</strong></p>
+            <button> <img src="./assests/icon/red-simple-shopping-cart-icon-12.png" alt="Cart" width="14" height="14">
+                Add to Cart </button>
+        </article>
+
+        <article data-category="pizza">
+        
+           <img src="./assests/images/veggi pizza.webp"  width="220">
+            <h3>Veggi Pizza</h3>
+            <p class="rating"> ⭐⭐⭐⭐⭐ <small>(120)</small> </p>
+            <p class="price"> <strong>₹249</strong></p>
+            <button> <img src="./assests/icon/red-simple-shopping-cart-icon-12.png" alt="Cart" width="14" height="14">
+                Add to Cart </button>
+        </article>
+        
+
+
         <!-- Menu Item 2 -->
-        <article>
+        <article data-category="burger">
             <img src="./assests/images/Cheese Burger.webp" width="220">
             <h3>Cheese Burger</h3>
             <p class="rating">⭐⭐⭐⭐⭐<small>(98)</small></p>
             <p class="price"> <strong> ₹199 </strong> </p>
-          <button> <img src="assets/icons/cart-red.png" alt="Cart" width="14" height="14">
+          <button> <img src="./assests/icon/red-simple-shopping-cart-icon-12.png" alt="Cart" width="14" height="14">
+                Add to Cartt </button>
+        </article>
+
+        <article data-category="burger">
+            <img src="./assests/images/Chiken burger.avif" width="220">
+            <h3>Chiken Burger</h3>
+            <p class="rating">⭐⭐⭐⭐⭐<small>(98)</small></p>
+            <p class="price"> <strong> ₹199 </strong> </p>
+          <button> <img src="./assests/icon/red-simple-shopping-cart-icon-12.png" alt="Cart" width="14" height="14">
+                Add to Cartt </button>
+        </article>
+
+        <article data-category="burger">
+            <img src="./assests/images/Aloo tiki.webp" width="220">
+            <h3>Aloo tiki Burger</h3>
+            <p class="rating">⭐⭐⭐⭐⭐<small>(98)</small></p>
+            <p class="price"> <strong> ₹199 </strong> </p>
+          <button> <img src="./assests/icon/red-simple-shopping-cart-icon-12.png" alt="Cart" width="14" height="14">
+                Add to Cartt </button>
+        </article>
+
+        <article data-category="burger">
+            <img src="./assests/images/paneer burger.jpg" width="220">
+            <h3>Paneer Burger</h3>
+            <p class="rating">⭐⭐⭐⭐⭐<small>(98)</small></p>
+            <p class="price"> <strong> ₹199 </strong> </p>
+          <button> <img src="./assests/icon/red-simple-shopping-cart-icon-12.png" alt="Cart" width="14" height="14">
                 Add to Cartt </button>
         </article>
 
 
 <!-- Menu Item 3 -->
-        <article>
+        <article data-category="Pasta">
             <img src="./assests/images/Creamy Alfredo Pasta.webp" width="220">
             <h3>Creamy Alfredo Pasta</h3>
             <p class="rating">⭐⭐⭐⭐⭐ <small> (85) </small>
             </p>
             <p class="price"> <strong>₹229</strong> </p>
-            <button><img src="assets/icons/cart-red.png" alt="Cart" width="14" height="14">
+            <button><img src="./assests/icon/red-simple-shopping-cart-icon-12.png" alt="Cart" width="14" height="14">
                 Add to Cart  </button>
         </article>
 
+         <article data-category="Pasta">
+            <img src="./assests/images/creamy pasta.webp" width="220">
+            <h3>Creamy Pasta</h3>
+            <p class="rating">⭐⭐⭐⭐⭐ <small> (85) </small>
+            </p>
+            <p class="price"> <strong>₹229</strong> </p>
+            <button><img src="./assests/icon/red-simple-shopping-cart-icon-12.png" alt="Cart" width="14" height="14">
+                Add to Cart  </button>
+        </article>
+
+         <article data-category="Pasta">
+            <img src="./assests/images/Red-Sauce-Pasta-012-768x960.webp" width="220">
+            <h3>Red Sauce Pasta</h3>
+            <p class="rating">⭐⭐⭐⭐⭐ <small> (85) </small>
+            </p>
+            <p class="price"> <strong>₹229</strong> </p>
+            <button><img src="./assests/icon/red-simple-shopping-cart-icon-12.png" alt="Cart" width="14" height="14">
+                Add to Cart  </button>
+        </article>
+
+         <article data-category="Pasta">
+            <img src="./assests/images/white-sauce-pasta.webp" width="220">
+            <h3>White Sauce Pasta</h3>
+            <p class="rating">⭐⭐⭐⭐⭐ <small> (85) </small>
+            </p>
+            <p class="price"> <strong>₹229</strong> </p>
+            <button><img src="./assests/icon/red-simple-shopping-cart-icon-12.png" alt="Cart" width="14" height="14">
+                Add to Cart  </button>
+        </article>
+
+
+
+
         
 <!-- Menu Item 4 -->
-        <article>
+        <article data-category="Biryani">
             <img src="./assests/images/Chicken Biryani.jpg" width="220">
             <h3>Chicken Biryani</h3>
             <p class="rating"> ⭐⭐⭐⭐⭐ <small>(110)</small> </p>
             <p class="price"> <strong>₹279</strong> </p>
-            <button><img src="assets/icons/cart-red.png" alt="Cart" width="14" height="14">
+            <button><img src="./assests/icon/red-simple-shopping-cart-icon-12.png" alt="Cart" width="14" height="14">
                 Add to Cart </button> </button>
         </article>
+
+         <article data-category="Sandwich">
+            <img src="./assests/images/Cheese-Sandwich-square.webp" width="220">
+            <h3>Cheese Sandwich</h3>
+            <p class="rating">⭐⭐⭐⭐⭐ <small> (85) </small>
+            </p>
+            <p class="price"> <strong>₹229</strong> </p>
+            <button><img src="./assests/icon/red-simple-shopping-cart-icon-12.png" alt="Cart" width="14" height="14">
+                Add to Cart  </button>
+        </article>
+
+         <article data-category="Sandwich">
+            <img src="./assests/images/garlic sandwitch.webp" width="220">
+            <h3>Garlic Sandwitch</h3>
+            <p class="rating">⭐⭐⭐⭐⭐ <small> (85) </small>
+            </p>
+            <p class="price"> <strong>₹229</strong> </p>
+            <button><img src="./assests/icon/red-simple-shopping-cart-icon-12.png" alt="Cart" width="14" height="14">
+                Add to Cart  </button>
+        </article>
+
+         <article data-category="Sandwich">
+            <img src="./assests/images/veg sandwich.jpg" width="220">
+            <h3>Veg Sandwitch</h3>
+            <p class="rating">⭐⭐⭐⭐⭐ <small> (85) </small>
+            </p>
+            <p class="price"> <strong>₹229</strong> </p>
+            <button><img src="./assests/icon/red-simple-shopping-cart-icon-12.png" alt="Cart" width="14" height="14">
+                Add to Cart  </button>
+        </article>
+
+
+
           <!-- Menu Item 5 -->
-        <article>
+        <article data-category="sweet">
             <img src="./assests/images/Choco Lava Cak.jpg" width="220">
             <h3>Choco Lava Cake</h3>
             <p class="rating"> ⭐⭐⭐⭐⭐ <small>(75)</small> </p>
             <p class="price"> <strong>₹149</strong> </p>
-            <button> <img src="assets/icons/cart-red.png" alt="Cart" width="14" height="14">
+            <button> <img src="./assests/icon/red-simple-shopping-cart-icon-12.png" alt="Cart" width="14" height="14">
                 Add to Cart  </button>
         </article>
 
@@ -136,9 +294,7 @@
         <a href="menu.html"> Order Now </a>
     </div>
 
-    <div class="offer-image">
-        <img src="assets/images/offer-pizza.png" width="320">
-    </div>
+   
 </section>
 
    <footer>
@@ -206,6 +362,7 @@
     
 
 </footer>
+<script src="./js/script.js"></script>
 
 
 
