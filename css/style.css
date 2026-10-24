@@ -1801,7 +1801,7 @@ button:hover{
 #shopping-cart td:nth-child(4){
     font-size:18px;
     font-weight:600;
-    color:#333;
+    color:white;
 }
 #shopping-cart td:last-child img{
     width:22px;
@@ -1812,6 +1812,27 @@ button:hover{
 #shopping-cart tbody tr:hover{
     background:#fffdfb;
 }
+/* Place cart items and order summary side by side */
+#cart-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+/* Cart items on the left */
+#shopping-cart {
+    width: 65%;
+}
+
+/* Order summary on the right */
+#order-summary {
+    width: 35%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
 #order-summary{
     width:35%;
     background:#ffffff;
