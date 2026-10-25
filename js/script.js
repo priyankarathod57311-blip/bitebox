@@ -134,6 +134,7 @@ let existingItem =
 
 console.log("Cart:", cart);
 renderCart();
+updateCartCount();
 }
 
 
@@ -205,6 +206,7 @@ function increaseQuantity(index) {
     );
     renderCart();
     updateOrderSummary();
+    updateCartCount();
 }
 function decreaseQuantity(index) {
     if (cart[index].quantity > 1) {
@@ -214,6 +216,7 @@ function decreaseQuantity(index) {
     }
     renderCart();
     updateOrderSummary();
+    updateCartCount();
 }
 
 function removeFromCart(index) {
@@ -222,6 +225,7 @@ function removeFromCart(index) {
 
     renderCart();
     updateOrderSummary();
+    updateCartCount();
 
 }
  
@@ -230,6 +234,7 @@ function removeFromCart(index) {
     localStorage.removeItem("biteboxCart");
     renderCart();
     updateOrderSummary();
+    updateCartCount();
     }
 
 if (cartBody) {
@@ -408,3 +413,89 @@ if (themeButton) {
     );
 }
 loadTheme();
+function updateCartCount() {
+
+    let cartCount = 0;
+
+    cart.forEach(function (item) {
+        cartCount += item.quantity;
+    });
+
+    let cartCountElement =
+        document.getElementById("cart-count");
+
+    if (cartCountElement) {
+        cartCountElement.textContent = cartCount;
+    }
+}
+updateCartCount();
+let contactForm = document.querySelector(".right-column form");
+function showToast(message, type) {
+    let toast = document.createElement("div");
+    toast.className = "toast " + type;
+    toast.textContent = message;
+    document.body.appendChild(toast);
+
+    setTimeout(function () {
+        toast.classList.add("show");
+    }, 100);
+
+    setTimeout(function () {
+        toast.classList.remove("show");
+
+        setTimeout(function () {
+            toast.remove();
+        }, 300);
+
+    }, 3000);
+}
+if (contactForm) {
+    contactForm.addEventListener(
+        "submit",
+        function (event) {
+            event.preventDefault();
+            let name = contactForm.querySelector('input[name="name"]');
+            let email = contactForm.querySelector('input[name="email"]');
+            let phone = contactForm.querySelector('input[name="phone"]');
+            let subject = contactForm.querySelector('input[name="subject"]');
+            let message = contactForm.querySelector('textarea[name="message"]');
+
+            if (!name.value.trim()) {
+                showToast("⚠ Please enter your name.","error");
+                return;
+            }
+
+            if (!email.value.trim()) {
+                showToast("⚠ Please enter your email address.","error");
+                return;
+            }
+
+            if (!email.validity.valid) {
+                showToast("⚠ Please enter a valid email address.","error");
+                return;
+            }
+
+            let phonePattern = /^[6-9]\d{9}$/;
+            if (!phone.value.trim()) {
+                showToast( "⚠ Please enter your phone number.","error");
+                return;
+            }
+
+            if (!phonePattern.test(phone.value.trim())) {
+                showToast("⚠ Please enter a valid 10-digit phone number.", 
+                "error");
+                return;
+            }
+             if (!subject.value.trim()) {
+                showToast("⚠ Please enter a subject.","error");
+                return;
+            }
+            if (!message.value.trim()) {
+                showToast("⚠ Please enter your message.","error");
+                return;
+            }
+            showToast("✓ Message sent successfully!","success");
+            contactForm.reset();
+        }
+    );
+}

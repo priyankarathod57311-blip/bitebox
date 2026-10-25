@@ -23,7 +23,11 @@
     |
     <a href="./contact.html">Contact</a>
     
-   <div class="cart-icon"> <a href="cart.html"><img src="./assests/images/cart icon.png"></a></div>
+    <div class="cart-icon"> <a href="cart.html" class="cart-icon"><span class="cart-wrapper"> 
+        <img src="./assests/images/cart icon.png">
+        <span id="cart-count">0</span>
+        </span>    
+    </a></div>
     |
     <button type="button" id="theme-toggle" class="theme-toggle">
         <span class="theme-icon">☀</span>
@@ -140,15 +144,15 @@
         <hr>
         <form>
             <div class="form-row">
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Your Email">
             </div>
 
             <div class="form-row">
-                <input type="tel" placeholder="Phone Number">
-                <input type="text" placeholder="Subject">
+                <input type="tel" name="phone" placeholder="Phone Number">
+                <input type="text" name="subject" placeholder="Subject">
             </div>
-             <textarea placeholder="Your Message"></textarea>
+             <textarea name="message" placeholder="Your Message"></textarea>
             <button>Send Message ✈</button>
         </form>
     </div>
